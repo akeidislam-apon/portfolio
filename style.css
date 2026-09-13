@@ -486,3 +486,57 @@ footer p:last-child {
         padding: 70px 20px;
     }
 }
+/* Education Cards */
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.education-card {
+    background: #0b1420;
+    border: 1px solid #00e5ff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #00e5ff;
+}
+
+.education-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.education-info h3 {
+    color: #00e5ff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.education-info h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.education-info p {
+    color: #b8c1cc;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
